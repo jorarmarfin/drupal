@@ -1,0 +1,5 @@
+prueba.style:
+  version: 8.x-0.0.01
+  css:
+    theme:
+      css/prueba.css: {}

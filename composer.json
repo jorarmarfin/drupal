@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^1.27",
         "drupal/back_to_top": "^1.0",
         "drupal/backup_migrate": "^4.0",
+        "drupal/bootstrap": "^3.20",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drupal/empty_page": "^2.0",

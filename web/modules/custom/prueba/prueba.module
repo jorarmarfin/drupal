@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains prueba.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function prueba_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the prueba module.
+    case 'help.page.prueba':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function prueba_page_attachments(array &$attachments)
+{
+  ##dump('aa');
+  $attachments['#attached']['library'][] = 'prueba/prueba.style';
+}
